@@ -1,0 +1,73 @@
+\documentclass[10pt]{article}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{amsmath, amsthm, amssymb}
+
+% Use more of the page
+\setlength{\topmargin}{0.0in}
+\setlength{\textheight}{9.0in}
+
+% Gives equations room in which to expand on the right
+\addtolength{\oddsidemargin}{-1.0in}
+
+% Various shorthands for mathmode
+\newcommand{\bs}[1]{\boldsymbol{#1}}
+\newcommand{\mc}[1]{\mathcal{#1}}
+
+\newcommand{\argmax}[1]{\underset{#1}{\operatorname{argmax}\:}}
+\newcommand{\argmin}[1]{\underset{#1}{\operatorname{argmin}\:}}
+\newcommand{\mmax}[1]{\underset{#1}{\max\:}}
+\newcommand{\mmin}[1]{\underset{#1}{\min\:}}
+
+\newcommand{\norm}[1]{\mathcal{N}\left( #1 \right)}
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\logp}[1]{\log\left( #1 \right)}
+\newcommand{\lnp}[1]{\ln\left( #1 \right)}
+\newcommand{\expp}[1]{\exp\left( #1 \right)}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\DeclareMathOperator{\sgn}{sgn}
+
+% Ordinal superscripts; these should work in normal or mathmode
+\newcommand{\superscript}[1]{\ensuremath{^{\textrm{#1}}} }
+\newcommand{\subscript}[1]{\ensuremath{_{\textrm{#1}}} }
+\newcommand{\xth}[0]{\superscript{th}}
+\newcommand{\xst}[0]{\superscript{st}}
+\newcommand{\xnd}[0]{\superscript{nd}}
+\newcommand{\xrd}[0]{\superscript{rd}}
+
+\begin{document}
+
+\title{Class: Name} 
+
+\author{Brian Romanowski\\
+btr@msu.edu} 
+% \date{April 15, 2010}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Code fragments
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \begin{figure}[h!]
+% \centering
+% \includegraphics[scale=0.60]{lassoWeights.loose.noOffset.eps}
+% \caption{Weights $\beta$ for lasso regression as $\lambda$ varies.}
+% \label{lassoWeights}
+% \end{figure}
+
+% \begin{table}[h!]
+% \begin{center}
+% \begin{tabular}{| l || c | c | c | }
+% \hline
+% $\lambda$ & training & validating & testing \\ \hline
+% \end{tabular}
+% \caption{Logistic regression accuracy on the heartstatlog corpus, averaged accuracy across 5 folds of the training data}
+% \label{p1results}
+% \end{center}
+% \end{table}
+
+\section*{Question 1}
+
+\end{document}
