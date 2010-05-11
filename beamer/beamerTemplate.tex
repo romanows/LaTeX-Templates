@@ -31,6 +31,47 @@
    \end{frame}
 }
 
+% Frame with an image:
+% \frame{
+% \frametitle{Screenshot}
+% \begin{center}
+% \includegraphics[scale=0.3]{TreasureScreenshot_DeskCpu2.photoshopBrighter.eps}
+% \end{center}
+% }
+
+% This slide will automatically have frame breaks inserted:
+% \begin{frame}[allowframebreaks]
+% \end{frame}
+
+% To display equations in blocks without odd spacing:
+% \frame{
+% \frametitle{Displaying Equations in Blocks}
+% \begin{block}{Block with math}
+% \abovedisplayskip=0pt
+% \abovedisplayshortskip=0pt 
+% \begin{align*}
+% \end{align*}
+% \end{block}
+% }
+
+% Table, for reference:
+% \frame{
+% \frametitle{Results Table}
+% \begin{table}[ht!]
+% \begin{center}
+%   \begin{tabular}{ | l | c | c | c | c | c | c | }
+%     \hline
+%     Round & General3 & General2 & Entity3 & Entity2 & Switched & Total \\ \hline \hline
+%     1 & 1 & 0 & 4 & 0 & 4 & 9 \\ \hline
+%     2 & 1 & 0 & 4 & 0 & 4 & 9 \\ \hline \hline
+%     3 & 1 & 0 & 2 & 0 & {\bf 8} & 11 \\ \hline
+%   \end{tabular}
+%   \caption{Number of cross-validation trials in which a language model indicated the testing data had the highest probability.}
+%   \label{bestResults}
+% \end{center}
+% \end{table}
+% }
+
 \section{Overview}
 \frame{
 \frametitle{Overview}
@@ -47,42 +88,6 @@
 \item Baz
 \end{itemize}
 \end{block}
-}
-
-% \frame{
-% \frametitle{Screenshot}
-% \begin{center}
-% \includegraphics[scale=0.3]{TreasureScreenshot_DeskCpu2.photoshopBrighter.eps}
-% \end{center}
-% }
-
-\frame{
-\frametitle{Displaying Equations in Blocks}
-\begin{block}{Block with math}
-\abovedisplayskip=0pt
-\abovedisplayshortskip=0pt 
-\begin{align*}
-\ell(\theta) &= \sum_{n{=}1}^N \log P(W_n {=} w|F_n {=} f) \\
-&= \sum_{n{=}1}^N \log \sum_{k{=}1}^K P(W_n {=} w|L_n {=} l_k)P(L_n{=}l_k|F_n {=} f)
-\end{align*}
-\end{block}
-}
-
-\frame{
-\frametitle{Results Table}
-\begin{table}[ht!]
-\begin{center}
-  \begin{tabular}{ | l | c | c | c | c | c | c | }
-    \hline
-    Round & General3 & General2 & Entity3 & Entity2 & Switched & Total \\ \hline \hline
-    1 & 1 & 0 & 4 & 0 & 4 & 9 \\ \hline
-    2 & 1 & 0 & 4 & 0 & 4 & 9 \\ \hline \hline
-    3 & 1 & 0 & 2 & 0 & {\bf 8} & 11 \\ \hline
-  \end{tabular}
-  \caption{Number of cross-validation trials in which a language model indicated the testing data had the highest probability.}
-  \label{bestResults}
-\end{center}
-\end{table}
 }
 
 \end{document}
