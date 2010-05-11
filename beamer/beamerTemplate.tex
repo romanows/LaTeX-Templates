@@ -1,0 +1,88 @@
+\documentclass[]{beamer}
+\usepackage{beamerthemeMadrid}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{ulem}
+\usepackage{amsmath}
+
+\newcommand{\argmax}[1]{\underset{#1}{\operatorname{argmax}\:}}
+\newcommand{\argmin}[1]{\underset{#1}{\operatorname{argmin}\:}}
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+
+\hypersetup{colorlinks=true} % configuration for hyperref
+
+\title[Course: Title]{A longer title}
+\date[05/04/10]{May 04, 2010}
+
+%\subtitle{Survey, Intro to Homework 3, Work on Project 1} 
+\institute[MSU]{Michigan State University}
+\author[Romanowski]{Brian Romanowski\\ btr@msu.edu} 
+%\logo{\includegraphics[scale=.3]{LAIRLogo}}
+
+\begin{document}
+\frame{\titlepage}
+
+\setcounter{tocdepth}{1}
+\AtBeginSection[]
+{
+   \begin{frame}
+       \frametitle{Outline}
+       \tableofcontents[currentsection]
+   \end{frame}
+}
+
+\section{Overview}
+\frame{
+\frametitle{Overview}
+\begin{block}{Question}
+\begin{itemize}
+\item Foo
+\item Bar
+\end{itemize}
+\end{block}
+
+\begin{block}{Approach}
+\begin{itemize}
+\item Bat
+\item Baz
+\end{itemize}
+\end{block}
+}
+
+% \frame{
+% \frametitle{Screenshot}
+% \begin{center}
+% \includegraphics[scale=0.3]{TreasureScreenshot_DeskCpu2.photoshopBrighter.eps}
+% \end{center}
+% }
+
+\frame{
+\frametitle{Displaying Equations in Blocks}
+\begin{block}{Block with math}
+\abovedisplayskip=0pt
+\abovedisplayshortskip=0pt 
+\begin{align*}
+\ell(\theta) &= \sum_{n{=}1}^N \log P(W_n {=} w|F_n {=} f) \\
+&= \sum_{n{=}1}^N \log \sum_{k{=}1}^K P(W_n {=} w|L_n {=} l_k)P(L_n{=}l_k|F_n {=} f)
+\end{align*}
+\end{block}
+}
+
+\frame{
+\frametitle{Results Table}
+\begin{table}[ht!]
+\begin{center}
+  \begin{tabular}{ | l | c | c | c | c | c | c | }
+    \hline
+    Round & General3 & General2 & Entity3 & Entity2 & Switched & Total \\ \hline \hline
+    1 & 1 & 0 & 4 & 0 & 4 & 9 \\ \hline
+    2 & 1 & 0 & 4 & 0 & 4 & 9 \\ \hline \hline
+    3 & 1 & 0 & 2 & 0 & {\bf 8} & 11 \\ \hline
+  \end{tabular}
+  \caption{Number of cross-validation trials in which a language model indicated the testing data had the highest probability.}
+  \label{bestResults}
+\end{center}
+\end{table}
+}
+
+\end{document}
