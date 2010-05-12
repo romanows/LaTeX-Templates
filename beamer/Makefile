@@ -1,18 +1,21 @@
-pdf all: beamerTemplate.pdf
+# Make sure a newline immediately follows the base filename of the .tex file, below
+BASE = beamerTemplate
 
-beamerTemplate.pdf: beamerTemplate.dvi
-	dvipdf beamerTemplate.dvi
+pdf all: $(BASE).pdf
 
-beamerTemplate.dvi: beamerTemplate.tex 
-	latex beamerTemplate.tex
-	latex beamerTemplate.tex
+%.pdf: %.dvi
+	dvipdf $(BASE).dvi
+
+%.dvi: %.tex 
+	latex $(BASE).tex
+	latex $(BASE).tex
 
 clean:
-	rm -f beamerTemplate.out
-	rm -f beamerTemplate.dvi
-	rm -f beamerTemplate.log
-	rm -f beamerTemplate.aux
-	rm -f beamerTemplate.nav
-	rm -f beamerTemplate.snm
-	rm -f beamerTemplate.toc
-	rm -f beamerTemplate.pdf
+	rm -f $(BASE).out
+	rm -f $(BASE).dvi
+	rm -f $(BASE).log
+	rm -f $(BASE).aux
+	rm -f $(BASE).nav
+	rm -f $(BASE).snm
+	rm -f $(BASE).toc
+	rm -f $(BASE).pdf
