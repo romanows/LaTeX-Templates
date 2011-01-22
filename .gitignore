@@ -12,3 +12,6 @@
 *.toc
 *.out
 *.nav
+
+# Editor temporary files
+*.swp
